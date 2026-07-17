@@ -8,7 +8,6 @@ class ColorPage extends StatefulWidget {
 
 class _ColorPageState extends State<ColorPage> {
   var colors = [Colors.yellow, Colors.green, Colors.red, Colors.blue];
-
   var count = 0;
 
   @override
