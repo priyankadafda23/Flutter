@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 class ColorPage extends StatefulWidget {
-  ColorPage({super.key});
+  const ColorPage({super.key});
   @override
   State<ColorPage> createState() => _ColorPageState();
 }

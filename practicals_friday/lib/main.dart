@@ -1,23 +1,42 @@
 import 'package:flutter/material.dart';
-import 'screens/counter_screen.dart';
-//import 'color_page.dart';
+import 'screens/todo_screen.dart';
+//import 'screens/counter_screen.dart';
+//import 'screens/color_page.dart';
 
-void main() {
-  runApp(const MainApp());
+// for color_page and counter_screen.
+// void main() {
+//   runApp(const MainApp());
+// }
+
+// for todo_screen
+void main(){
+  runApp(ToDoWidget());
 }
 
-class MainApp extends StatelessWidget {
-  const MainApp({super.key});
+class ToDoWidget extends StatelessWidget{
+  const ToDoWidget({super.key});
 
   @override
-  Widget build(BuildContext context) {
+  Widget build(BuildContext context){
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      theme: ThemeData(
-      colorScheme: .fromSeed(seedColor:Colors.deepPurple),),
-      home: CounterScreen(),
+      home: TodoScreen(),
     );
   }
+}
+// class MainApp extends StatelessWidget {
+//   const MainApp({super.key});
+
+  // counter_screen
+  // @override
+  // Widget build(BuildContext context) {
+  //   return MaterialApp(
+  //     debugShowCheckedModeBanner: false,
+  //     theme: ThemeData(
+  //     colorScheme: .fromSeed(seedColor:Colors.deepPurple),),
+  //     home: CounterScreen(),
+  //   );
+  // }
 
   //color_page
   // @override
@@ -27,4 +46,4 @@ class MainApp extends StatelessWidget {
   //     home: ColorPage(),
   //   );
   // }
-}
+// }
