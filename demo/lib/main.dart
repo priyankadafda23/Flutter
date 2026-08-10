@@ -1,18 +1,35 @@
 import 'package:flutter/material.dart';
-import './stopwatch/stopwatch.dart';
+// import './stopwatch/stopwatch.dart';
+import 'register.dart';
+
+// void main() {
+//   runApp(const StopWatchRun());
+// }
+
+// class StopWatchRun extends StatelessWidget {
+//   const StopWatchRun({super.key});
+
+//   @override
+//   Widget build(BuildContext context) {
+//     return const MaterialApp(
+//       debugShowCheckedModeBanner: false,
+//       home: StopWatchExample(),
+//     );
+//   }
+// }
 
 void main() {
-  runApp(const StopWatchRun());
+  runApp(const RegisterRun());
 }
 
-class StopWatchRun extends StatelessWidget {
-  const StopWatchRun({super.key});
+class RegisterRun extends StatelessWidget {
+  const RegisterRun({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
+    return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: StopWatchExample(),
+      home: RegisterExercise(),
     );
   }
 }

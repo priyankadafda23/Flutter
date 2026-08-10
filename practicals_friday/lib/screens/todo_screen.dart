@@ -1,6 +1,6 @@
 import 'dart:developer';
-
 import 'package:flutter/material.dart';
+import 'package:practicals_friday/models/tasks.dart';
 
 class TodoScreen extends StatefulWidget {
   const TodoScreen({super.key});
@@ -11,7 +11,7 @@ class TodoScreen extends StatefulWidget {
 
 class _TodoScreenState extends State<TodoScreen> {
   TextEditingController txtTitle = TextEditingController();
-  List<String> tasks = [];
+  List<Task> tasks = [];
   bool isChecked = false;
   int selInd = -1;
   @override
@@ -30,11 +30,10 @@ class _TodoScreenState extends State<TodoScreen> {
                   if(txtTitle.text.isNotEmpty){
                   
                   log(txtTitle.text);
-                  if(selInd==-1)
-                {
-                                    tasks.add(txtTitle.text);
+                  if(selInd==-1) {
+                    tasks.add(Task(txtTitle.text,false));
                   }else{
-                    tasks[selInd] = txtTitle.text;
+                    tasks[selInd].title = txtTitle.text;
                     selInd = -1;
                   }
                   txtTitle.text = "";
@@ -48,20 +47,22 @@ class _TodoScreenState extends State<TodoScreen> {
             Expanded(
               child: ListView.builder(
                 itemBuilder: (context, index) => ListTile(
-                  leading: Checkbox(value: isChecked, onChanged: (v){
-                    isChecked = v!;
+                  leading: Checkbox(value: tasks[index].isCompleted, onChanged: (v){
+                    tasks[index].isCompleted = v!;
                     setState(() {
                       
                     });
                   }),
-                  title:Text(tasks[index]),
+                  title:Text(tasks[index].title, style:TextStyle(
+                    color:tasks[index].isCompleted? Colors.red:Colors.black
+                  )),
                   trailing: SizedBox(
                     width:100,
                     child: Row(
                       children: [
                         IconButton(
-                          onPressed: (){
-                            txtTitle.text = tasks[index];
+                          onPressed: tasks[index].isCompleted? null :(){
+                            txtTitle.text = tasks[index].title;
                             selInd = index;
                             setState(() {
                               
@@ -74,7 +75,7 @@ class _TodoScreenState extends State<TodoScreen> {
                               
                             });
                           },
-                          icon: Icon(Icons.delete)),
+                           icon: Icon(Icons.delete)),
                       ],
                     ),
                   ),

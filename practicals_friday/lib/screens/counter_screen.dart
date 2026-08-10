@@ -8,13 +8,32 @@ class CounterScreen extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: Text('Counter Screen'),
-        actions: [
-          IconButton(
-            onPressed:(){},
-            icon:Icon(Icons.person)
-            ),
-        ],
+        // actions: [
+        //   IconButton(
+        //     onPressed:(){},
+        //     icon:Icon(Icons.person)
+        //     ),
+        // ],
       ),
+      body: Column(
+        children: [
+          Text('0'),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              ElevatedButton(
+                onPressed: () {},
+                child: Text('Increment'),
+              ),
+              SizedBox(width: 20),
+              ElevatedButton(
+                onPressed: () {},
+                child: Text('Decrement'),
+              ),
+            ],
+          ),
+        ],
+      )
     );
   }
 }

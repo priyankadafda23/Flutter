@@ -1,0 +1,13 @@
+create a flutter application with following details.
+design a registration form with following components
+1. student name (textbox)
+2. branch ce/it (checkbox, by default unchecked for ce branch)
+3. gender (radio button group, male, female)
+4. division (dropdown, a,b,c,d,e,f,g)
+5. age (textbox with numerical input only)
+6. email (textbox with email input only)
+7. programming languages efficiency (slider, 1 to 15 level)
+8. language known (checkbox, hindi, english, gujarati)
+9. submit button
+when user enter all details and click on submit button
+it should display all those details below the submit button
