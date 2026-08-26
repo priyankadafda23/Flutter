@@ -2,7 +2,9 @@ import 'package:flutter/material.dart';
 import 'dart:async';
 
 class StopWatchExample extends StatefulWidget {
-  const StopWatchExample({super.key});
+  final String name;
+  final String email;
+  const StopWatchExample({super.key, required this.name, required this.email});
 
   @override
   State<StopWatchExample> createState() => _StopWatchExampleState();
@@ -89,8 +91,9 @@ class _StopWatchExampleState extends State<StopWatchExample> {
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children:[
+          //Text(widget.email),
           Text('Lap: ${laps.length+1}',
-            style: Theme.of(context).textTheme.headlineMedium!.copyWith(color: Colors.white),
+            style: Theme.of(context).textTheme.headlineMedium!.copyWith(color: Colors.black),
           ),
         ]
       )
@@ -101,7 +104,7 @@ class _StopWatchExampleState extends State<StopWatchExample> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Stopwatch'),
+        title: Text(widget.name),
       ),
       body: Column(
         mainAxisAlignment: MainAxisAlignment.center,

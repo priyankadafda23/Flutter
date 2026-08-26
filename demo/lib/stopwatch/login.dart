@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import './stopwatch.dart';
 
 class LoginScreen extends StatefulWidget {
   const LoginScreen({super.key});
@@ -10,6 +11,7 @@ class LoginScreen extends StatefulWidget {
 class _LoginScreenState extends State<LoginScreen> {
   bool loggedIn = false;
   String name='';
+  String email='';
   final _nameController = TextEditingController();
   final _emailController = TextEditingController();
   final _formKey = GlobalKey<FormState>();
@@ -93,7 +95,14 @@ class _LoginScreenState extends State<LoginScreen> {
       setState(() {
         loggedIn = true;
         name = _nameController.text;
+        email = _emailController.text;
       });
+      Navigator.push(
+        context,
+        MaterialPageRoute(
+          builder: (context) =>StopWatchExample(name:name, email:email),
+          ),
+      );
     }
   }
 }
