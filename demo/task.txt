@@ -12,3 +12,18 @@ design a registration form with following components
 9. submit button
 when user enter all details and click on submit button
 it should display all those details below the submit button
+-----------------------------------------------------------------------------------------
+exercise:
+create a registration form with following details:
+1. user name (validation) st ct
+2. email (validation) st ct
+3. password (validation 10 char, 3 capital, 3 small, 2 numbers, 2) st ct
+4. re-enter password (validation) st ct
+5. gender (radio- male/female) st
+6. qualification (checkbox- 10/12/graduate) st
+7. city (dropdown- city1, city2, city3) st
+8. height (slider 48 inch to 84 inch) st
+9. dob (date time picker) st
+10. submit button
+when user click on submit button, validate all data and redirect user to next widget.
+display all user entered information into next widget.

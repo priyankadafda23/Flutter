@@ -1,0 +1,12 @@
+const String i1="assets/images/img1.jpg";
+List<String> i2=[
+  "assets/images/img2.jpg",
+  "assets/images/img3.jpg",
+  "assets/images/img4.jpg",
+  "assets/images/img5.jpg",
+  "assets/images/img6.jpg",
+  "assets/images/img7.jpg",
+  "assets/images/img8.jpg",
+  "assets/images/img9.jpg",
+  "assets/images/img10.jpg",
+];
