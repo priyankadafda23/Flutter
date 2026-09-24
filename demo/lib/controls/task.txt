@@ -1,3 +1,4 @@
+-----------------------------------------------------------------------------------------
 exercise:
 create a flutter application with following details.
 design a registration form with following components
@@ -12,6 +13,7 @@ design a registration form with following components
 9. submit button
 when user enter all details and click on submit button
 it should display all those details below the submit button
+
 -----------------------------------------------------------------------------------------
 exercise:
 create a registration form with following details:
@@ -27,3 +29,20 @@ create a registration form with following details:
 10. submit button
 when user click on submit button, validate all data and redirect user to next widget.
 display all user entered information into next widget.
+
+-----------------------------------------------------------------------------------------
+23/09/2026 exercise
+create techfest mobile app with following data:
+1. create a registration form using 
+    radio(department), 
+    checkbox(tech/non-tech),
+    event date(date-time picker), 
+    participant name(text field), 
+    event name (dropdown)
+    fees(slider)
+2. Create a tab view once complete registration
+    i. Tab 1 all events (gridview, 2 events per row)
+    ii. Tab 2 event 1 details (scroll event images with description)
+    iii. Tab 2 event 2 details (scroll event images with description)
+
+-----------------------------------------------------------------------------------------

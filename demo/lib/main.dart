@@ -1,15 +1,15 @@
-import 'package:demo/controls/tabview.dart';
 import 'package:flutter/material.dart';
-// import './stopwatch/stopwatch.dart';
+//import './stopwatch/stopwatch.dart';
 //import 'register.dart';
 //import './calculator/calculator.dart';
 //import './stopwatch/login.dart';
 //import './inputcontrols/inputtextcontrol.dart';
 //import './controls/imagedisp.dart';
 //import './controls/gridview.dart';
-import './controls/tabview.dart';
+//import './controls/tabview.dart';
+import './techfest/register.dart';
 
-//tabview.dart
+//techfest/register.dart
 void main() {
   runApp(const MyApp());
 }
@@ -21,10 +21,27 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: const TabViewExample(),
+      home: const RegisterPage(),
     );
   }
 }
+
+//tabview.dart
+// void main() {
+//   runApp(const MyApp());
+// }
+
+// class MyApp extends StatelessWidget {
+//   const MyApp({super.key});
+
+//   @override
+//   Widget build(BuildContext context) {
+//     return MaterialApp(
+//       debugShowCheckedModeBanner: false,
+//       home: const TabViewExample(),
+//     );
+//   }
+// }
 
 //gridview.dart
 // void main() {
