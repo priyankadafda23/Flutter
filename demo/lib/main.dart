@@ -7,9 +7,11 @@ import 'package:flutter/material.dart';
 //import './controls/imagedisp.dart';
 //import './controls/gridview.dart';
 //import './controls/tabview.dart';
-import './techfest/register.dart';
+//import './techfest/register.dart';
+//import './controls/localjson.dart';
+import './club-membership/clubmembership.dart';
 
-//techfest/register.dart
+//clubmembership.dart
 void main() {
   runApp(const MyApp());
 }
@@ -21,10 +23,49 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: const RegisterPage(),
+      title: 'Club Membership Desk',
+      theme: ThemeData(
+        primarySwatch: Colors.blue,
+      ),
+      home: const ClubMembership(),
     );
   }
 }
+
+
+//localjson.dart
+// void main() {
+//   runApp(const MyApp());
+// }
+
+// class MyApp extends StatelessWidget {
+//   const MyApp({super.key});
+
+//   @override
+//   Widget build(BuildContext context) {
+//     return MaterialApp(
+//       debugShowCheckedModeBanner: false,
+//       home: const UserForm(),
+//     );
+//   }
+// }
+
+//techfest/register.dart
+//// void main() {
+//   runApp(const MyApp());
+// }
+
+// class MyApp extends StatelessWidget {
+//   const MyApp({super.key});
+
+//   @override
+//   Widget build(BuildContext context) {
+//     return MaterialApp(
+//       debugShowCheckedModeBanner: false,
+//       home: const RegisterPage(),
+//     );
+//   }
+// }
 
 //tabview.dart
 // void main() {

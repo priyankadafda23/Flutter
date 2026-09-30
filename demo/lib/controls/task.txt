@@ -46,3 +46,23 @@ create techfest mobile app with following data:
     iii. Tab 2 event 2 details (scroll event images with description)
 
 -----------------------------------------------------------------------------------------
+30/09/2026 exercise-03
+Club Membership Desk
+Build one small FLutter app that saves member details locally as JSON and shows them in 
+a list. Students can add a record, edit it, and update it.
+1. Textbox member name
+2. Radio Role: Volunteer or Student
+3. Checkbox fees paid
+4. Button Save or update
+5. Button Cancel (only while editing)
+6. ListView.builder Saved members
+7. Edit icon Load that record back into the form
+What the app must do:
+- On Save, store one JSON object with id,name,role, and paid.
+- Keep all records in SharedPreferences so they remain after the app is closed.
+- Show every record in ListView.builder
+- On Edit, fill the form and set editingId.
+- On update, find the record by id, change it, call _persist(), and refresh the list.
+- Do not allow an empty name.
+
+-----------------------------------------------------------------------------------------
