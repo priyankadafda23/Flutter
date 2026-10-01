@@ -92,50 +92,6 @@ class _UserFormState extends State<UserForm>{
           padding: const EdgeInsets.all(8.0),
           child: Column(
             children:[
-              TextField(
-                controller: nameCtrl,
-                decoration: const InputDecoration(
-                  border: OutlineInputBorder(),
-                  labelText: 'Name',
-                )
-              ),
-              RadioListTile<String>(
-                title: const Text('Male'),
-                value: 'Male',
-                groupValue: gender,
-                onChanged: (String? value) {
-                  setState(() =>
-                    gender = value!
-                  );
-                },
-              ),
-              RadioListTile<String>(
-                title: const Text('Female'),
-                value: 'Female',
-                groupValue: gender,
-                onChanged: (value) {
-                  setState(() =>
-                    gender = value!
-                  );
-                },
-              ),
-              CheckboxListTile(
-                title: const Text('Agree'),
-                value: agree,
-                onChanged: (value){
-                  setState(() => agree = value!);
-                }
-              ),
-              ElevatedButton(
-                onPressed: _save,
-                child: const Text('Save')
-              ),
-              SizedBox(height: 10),
-              ElevatedButton(
-                onPressed: () => _update(temp_Index),
-                child: const Text('Update')
-              ),
-              SizedBox(height: 10),
               Expanded(
                 child: ListView.builder(
                   itemCount: items.length,

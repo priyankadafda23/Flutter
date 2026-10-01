@@ -136,28 +136,6 @@ class _UserFormState extends State<UserForm>{
                 child: const Text('Update')
               ),
               SizedBox(height: 10),
-              Expanded(
-                child: ListView.builder(
-                  itemCount: items.length,
-                  itemBuilder: (context, index) {
-                    final i1 = items[index];
-                    return ListTile(
-                      title: Text('Name: ${i1['name']}'),
-                      subtitle: Text('Gender: ${i1['gender']}, Agree: ${i1['agree']}'),
-                      trailing:
-                        IconButton(
-                          icon: const Icon(Icons.delete),
-                          onPressed: ()=> _delete(index),
-                        ),
-                        leading: IconButton(
-                          icon: const Icon(Icons.edit),
-                          onPressed: ()=>
-                            _update_index(index),
-                        ),
-                    );
-                  }
-                ),
-              ),
             ]
           ),
         ),
